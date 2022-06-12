@@ -3,6 +3,14 @@ This repository will iteratively provide all relevant XJTLU data science module 
 
 ## Module List
 | Year  | Module Name                        |Module Code |Credit |
+| ----- | ----------------------------------| ------|------ |
+| Y2 S1 | Programming with C++/R                       | DTS102TC |5      |
+| Y2 S1 | Computer Architecture and Operating Systems  | IOT103TC |5      |
+| Y2 S1 | Introduction to Probability and Statistics   | MTH113TC |5      |
+| Y2 S2 | Introduction to Databases                    | CPT103TC |5      |
+| Y2 S2 | Artificial Intelligence and Data Analysis    | MFE204TC |5      |
+| Y2 S2 | Introduction to Neural Networks              | DTS101TC |2.5    |
+| Y2 S2 | Numerical Methods                            | DTS104TC |2.5    |
 | ----- | ---------------------------------- | ------|------ |
 | Y3 S1 | [Database Development and Design](https://github.com/nothairyyq/Data-Science-XJTLU/tree/main/CPT201TC)    | CPT201TC |5      |
 | Y3 S1 | [Pattern Recognition](https://github.com/nothairyyq/Data-Science-XJTLU/tree/main/DTS201TC)                | DTS201TC |5      |
@@ -13,7 +21,7 @@ This repository will iteratively provide all relevant XJTLU data science module 
 | Y3 S2 | High Performance Computing         | DTS205TC |2.5    |
 
 ## Module Preview
-
+### Year 2
 ### Year 3
 
 **2021Fall-2022Spring** 学年让同学普遍最不适应的课程是HPC(DTS205TC), 205使用的编程语言是Java，由于我们这一届学生接收到学校Java课程的教授只有两天时间，所以大多数同学刚接触这门课会很不适应使用Java的语法，而且目前这门课的课程信息非常少导致课程难度梯度巨大。205的核心内容是$Hadoop,Spark$ 框架中$Mapreduce$ 功能，最后作业使用到的$HBase$和HDFS file system。如果学弟学妹们后续希望走大数据开发/其他后端开发/SDE的路线, 这门课以及Y3S1的202是大数据为数不多的提升开发能力的课程，需要好好掌握。即使是希望走算法路线的同学，hadoop/spark依旧是现如今加速大规模计算的工具之一，是以后求职的加分项。

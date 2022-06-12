@@ -1,0 +1,35 @@
+/companyDB/departments/department 
+
+/companyDB/employees/employee/@supervisor
+
+/companyDB/employees/employee/lname/text()
+
+/companyDB/employees/employee/*
+
+/companyDB/employees/employee/@*
+
+//dob
+
+/companyDB/employees/employee[7]
+
+/companyDB/employees/employee[1]/dependents/dependent[2]
+
+/companyDB/employees/employee[1]/dependents/dependent[last()]
+
+/companyDB/employees/employee[position()<=3]
+
+/companyDB/employees/employee[minit="E"]
+
+/companyDB/projects/project[@controllingDepartment>6]
+
+/companyDB/employees/employee[starts-with(lname,"S")]
+
+/companyDB/employees/employee[contains(address,"Philadelphia")]
+
+//employee[@worksFor=7 and sex="M" and dependents/dependent[sex="M"]]
+
+/companyDB/departments/department/dname/text() |
+/companyDB/projects/project/pname/text()
+
+/companyDB/employees/employee[@worksFor=ancestor::companyDB/departments/department[dname="Administration"]/@dno]
+

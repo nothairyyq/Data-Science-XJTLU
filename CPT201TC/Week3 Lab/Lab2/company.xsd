@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:simpleType name="dnoType">
+  <xs:restriction base="xs:integer">
+    <xs:minInclusive value="1"/>
+    <xs:maxInclusive value="50"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="ssnType">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="[0-9]{9}"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="listOfSSNType">
+  <xs:list itemType="ssnType"/>
+</xs:simpleType>
+
+<xs:simpleType name="pnoType">
+  <xs:restriction base="xs:integer">
+    <xs:minInclusive value="1"/>
+    <xs:maxInclusive value="200"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="hoursType">
+  <xs:restriction base="xs:decimal">
+    <xs:totalDigits value="5"/>
+    <xs:fractionDigits value="2"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="listOfPnoType">
+  <xs:list itemType="pnoType"/>
+</xs:simpleType>
+
+<xs:complexType name="locationsType">
+  <xs:sequence>
+    <xs:element name="location" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="managerType">
+  <xs:sequence>
+    <xs:element name="startDate" type="xs:string"/>
+  </xs:sequence>
+  <xs:attribute name="mssn" type="ssnType"/>
+</xs:complexType>
+
+<xs:complexType name="ssnListType">
+  <xs:attribute name="essns" type="listOfSSNType"/>
+</xs:complexType>
+
+<xs:complexType name="pnoListType">
+  <xs:attribute name="pnos" type="listOfPnoType"/>
+</xs:complexType>
+
+<xs:complexType name="departmentType">
+  <xs:sequence>
+    <xs:element name="dname" type="xs:string"/>
+    <xs:element name="locations" type="locationsType"/>
+    <xs:element name="manager" type="managerType"/>
+    <xs:element name="employees" type="ssnListType"/>
+    <xs:element name="projectsControlled" type="pnoListType"/>
+  </xs:sequence>
+  <xs:attribute name="dno" type="dnoType" use="required"/>
+</xs:complexType>
+
+<xs:complexType name="departmentsType">
+  <xs:sequence>
+    <xs:element name="department" type="departmentType" minOccurs="0" maxOccurs="unbounded"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="genderType">
+   <xs:restriction base="xs:string">
+      <xs:enumeration value="M"/>
+      <xs:enumeration value="F"/>
+   </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="salaryType">
+  <xs:restriction base="xs:integer">
+    <xs:minInclusive value="1000"/>
+    <xs:maxInclusive value="200000"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="dependentsType">
+  <xs:sequence>
+    <xs:element name="dependent" type="dependentType" minOccurs="1" maxOccurs="unbounded"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dependentType">
+  <xs:sequence>
+    <xs:element name="dependentName" type="xs:string"/>
+    <xs:element name="sex" type="genderType"/>
+    <xs:element name="dob" type="xs:string"/>
+    <xs:element name="relationship" type="xs:string"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="prjsType">
+  <xs:sequence>
+    <xs:element name="worksOn" type="prjType" minOccurs="1" maxOccurs="unbounded"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="prjType">
+  <xs:attribute name="pno" type="pnoType" use="required"/>
+  <xs:attribute name="hours" type="hoursType" use="required"/>
+</xs:complexType>
+
+<xs:complexType name="employeeType">
+  <xs:sequence>
+    <xs:element name="fname" type="xs:string"/>
+    <xs:element name="minit" type="xs:string"/>
+    <xs:element name="lname" type="xs:string"/>
+    <xs:element name="dob" type="xs:string"/>
+    <xs:element name="address" type="xs:string"/>
+    <xs:element name="sex" type="genderType"/>
+    <xs:element name="salary" type="salaryType"/>
+    <xs:element name="dependents" type="dependentsType" minOccurs="0"/>
+    <xs:element name="supervisees" type="ssnListType" minOccurs="0"/>
+    <xs:element name="projects" type="prjsType" minOccurs="0"/>
+  </xs:sequence>
+  <xs:attribute name="ssn" type="ssnType" use="required"/>
+  <xs:attribute name="worksFor" type="dnoType" use="required"/>
+  <xs:attribute name="supervisor" type="ssnType"/>
+  <xs:attribute name="manages" type="dnoType"/>
+</xs:complexType>
+
+<xs:complexType name="employeesType">
+  <xs:sequence>
+    <xs:element name="employee" type="employeeType" minOccurs="0" maxOccurs="unbounded"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="workersType">
+  <xs:sequence>
+    <xs:element name="worker" type="workerType" minOccurs="1" maxOccurs="unbounded"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="workerType">
+  <xs:simpleContent>
+    <xs:extension base="hoursType">
+      <xs:attribute name="essn" type="ssnType"/>
+    </xs:extension>
+  </xs:simpleContent>
+</xs:complexType>
+
+<xs:complexType name="projectType">
+  <xs:sequence>
+    <xs:element name="pname" type="xs:string"/>
+    <xs:element name="plocation" type="xs:string"/>
+    <xs:element name="workers" type="workersType" minOccurs="0"/>
+  </xs:sequence>
+  <xs:attribute name="pnumber" type="pnoType" use="required"/>
+  <xs:attribute name="controllingDepartment" type="dnoType" use="required"/>
+</xs:complexType>
+
+<xs:complexType name="projectsType">
+  <xs:sequence>
+    <xs:element name="project" type="projectType" minOccurs="0" maxOccurs="unbounded"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="companyDBType">
+  <xs:sequence>
+    <xs:element name="departments" type="departmentsType"/>
+    <xs:element name="employees" type="employeesType"/>
+    <xs:element name="projects" type="projectsType"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:element name="companyDB" type="companyDBType"/>
+
+</xs:schema>

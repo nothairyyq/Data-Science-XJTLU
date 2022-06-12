@@ -1,0 +1,838 @@
+<?xml version="1.0" ?>
+<companyDB>
+  <departments>
+  
+    <department dno="1">
+      <dname>Headquarters</dname>
+      <locations>
+        <location>Houston</location>
+      </locations>
+      <manager mssn="888665555">
+        <startDate>19-JUN-1971</startDate>
+      </manager>
+      <employees essns="888665555"/>
+      <projectsControlled pnos="20"/>
+    </department>
+  
+    <department dno="4">
+      <dname>Administration</dname>
+      <locations>
+        <location>Stafford</location>
+      </locations>
+      <manager mssn="987654321">
+        <startDate>01-JAN-1985</startDate>
+      </manager>
+      <employees essns="987654321 987987987 999887777"/>
+      <projectsControlled pnos="10 30"/>
+    </department>
+  
+    <department dno="5">
+      <dname>Research</dname>
+      <locations>
+        <location>Bellaire</location>
+        <location>Sugarland</location>
+        <location>Houston</location>
+      </locations>
+      <manager mssn="333445555">
+        <startDate>22-MAY-1978</startDate>
+      </manager>
+      <employees essns="123456789 333445555 666884444 453453453"/>
+      <projectsControlled pnos="1 2 3"/>
+    </department>
+  
+    <department dno="6">
+      <dname>Software</dname>
+      <locations>
+        <location>Atlanta</location>
+        <location>Sacramento</location>
+      </locations>
+      <manager mssn="111111100">
+        <startDate>15-MAY-1999</startDate>
+      </manager>
+      <employees essns="111111100 555555500 111111101 111111102 111111103 333333300 333333301 555555501"/>
+      <projectsControlled pnos="61 62 63"/>
+    </department>
+  
+    <department dno="7">
+      <dname>Hardware</dname>
+      <locations>
+        <location>Milwaukee</location>
+      </locations>
+      <manager mssn="444444400">
+        <startDate>15-MAY-1998</startDate>
+      </manager>
+      <employees essns="222222200 222222201 222222202 222222203 222222204 222222205 444444400 444444401 444444402 444444403"/>
+      <projectsControlled pnos="91 92"/>
+    </department>
+  
+    <department dno="8">
+      <dname>Sales</dname>
+      <locations>
+        <location>Chicago</location>
+        <location>Dallas</location>
+        <location>Philadelphia</location>
+        <location>Seattle</location>
+        <location>Miami</location>
+      </locations>
+      <manager mssn="555555500">
+        <startDate>01-JAN-1997</startDate>
+      </manager>
+      <employees essns="666666600 666666601 666666602 666666603 666666604 666666605 666666606 666666607 666666608 666666609 666666610 666666611 666666612 666666613"/>
+      <projectsControlled pnos=""/>
+    </department>
+  
+  </departments>
+
+  <employees>
+
+    <employee ssn="333445555" worksFor="5" supervisor="888665555" manages="5">
+      <fname>Franklin</fname>
+      <minit>T</minit>
+      <lname>Wong</lname>
+      <dob>08-DEC-45</dob>
+      <address>638 Voss, Houston, TX</address>
+      <sex>M</sex>
+      <salary>40000</salary>
+      <dependents>
+        <dependent>
+          <dependentName>Alice</dependentName>
+          <sex>F</sex>
+          <dob>05-APR-1976</dob>
+          <relationship>Daughter</relationship>
+        </dependent>
+        <dependent>
+          <dependentName>Theodore</dependentName>
+          <sex>M</sex>
+          <dob>25-OCT-1973</dob>
+          <relationship>Son</relationship>
+        </dependent>
+        <dependent>
+          <dependentName>Joy</dependentName>
+          <sex>F</sex>
+          <dob>03-MAY-1948</dob>
+          <relationship>Spouse</relationship>
+        </dependent>
+      </dependents>
+      <supervisees essns="123456789 666884444 453453453"/>
+      <projects>
+        <worksOn pno="2" hours="10.0"/>
+        <worksOn pno="3" hours="10.0"/>
+        <worksOn pno="10" hours="10.0"/>
+        <worksOn pno="20" hours="10.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="888665555" worksFor="1" manages="1">
+      <fname>James</fname>
+      <minit>E</minit>
+      <lname>Borg</lname>
+      <dob>10-NOV-27</dob>
+      <address>450 Stone, Houston, TX</address>
+      <sex>M</sex>
+      <salary>55000</salary>
+      <supervisees essns="333445555 987654321"/>
+      <projects>
+        <worksOn pno="20" hours="0.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="987654321" worksFor="4" supervisor="888665555" manages="4">
+      <fname>Jennifer</fname>
+      <minit>S</minit>
+      <lname>Wallace</lname>
+      <dob>20-JUN-31</dob>
+      <address>291 Berry, Bellaire, TX</address>
+      <sex>F</sex>
+      <salary>43000</salary>
+      <dependents>
+        <dependent>
+          <dependentName>Abner</dependentName>
+          <sex>M</sex>
+          <dob>29-FEB-1932</dob>
+          <relationship>Spouse</relationship>
+        </dependent>
+      </dependents>
+      <supervisees essns="999887777 987987987"/>
+      <projects>
+        <worksOn pno="30" hours="20.0"/>
+        <worksOn pno="20" hours="15.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="123456789" worksFor="5" supervisor="333445555">
+      <fname>John</fname>
+      <minit>B</minit>
+      <lname>Smith</lname>
+      <dob>09-Jan-55</dob>
+      <address>731 Fondren, Houston, TX</address>
+      <sex>M</sex>
+      <salary>30000</salary>
+      <dependents>
+        <dependent>
+          <dependentName>Michael</dependentName>
+          <sex>M</sex>
+          <dob>01-JAN-1978</dob>
+          <relationship>Son</relationship>
+        </dependent>
+        <dependent>
+          <dependentName>Alice</dependentName>
+          <sex>F</sex>
+          <dob>31-DEC-1978</dob>
+          <relationship>Daughter</relationship>
+        </dependent>
+        <dependent>
+          <dependentName>Elizabeth</dependentName>
+          <sex>F</sex>
+          <dob>05-MAY-1957</dob>
+          <relationship>Spouse</relationship>
+        </dependent>
+      </dependents>
+      <projects>
+        <worksOn pno="1" hours="32.5"/>
+        <worksOn pno="2" hours="7.5"/>
+      </projects>
+    </employee>
+
+    <employee ssn="999887777" worksFor="4" supervisor="987654321">
+      <fname>Alicia</fname>
+      <minit>J</minit>
+      <lname>Zelaya</lname>
+      <dob>19-JUL-58</dob>
+      <address>3321 Castle, Spring, TX</address>
+      <sex>F</sex>
+      <salary>25000</salary>
+      <projects>
+        <worksOn pno="30" hours="30.0"/>
+        <worksOn pno="10" hours="10.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="666884444" worksFor="5" supervisor="333445555">
+      <fname>Ramesh</fname>
+      <minit>K</minit>
+      <lname>Narayan</lname>
+      <dob>15-SEP-52</dob>
+      <address>971 Fire Oak, Humble, TX</address>
+      <sex>M</sex>
+      <salary>38000</salary>
+      <projects>
+        <worksOn pno="3" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="453453453" worksFor="5" supervisor="333445555">
+      <fname>Joyce</fname>
+      <minit>A</minit>
+      <lname>English</lname>
+      <dob>31-JUL-62</dob>
+      <address>5631 Rice, Houston, TX</address>
+      <sex>F</sex>
+      <salary>25000</salary>
+      <projects>
+        <worksOn pno="1" hours="20.0"/>
+        <worksOn pno="2" hours="20.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="987987987" worksFor="4" supervisor="987654321">
+      <fname>Ahmad</fname>
+      <minit>V</minit>
+      <lname>Jabbar</lname>
+      <dob>29-MAR-59</dob>
+      <address>980 Dallas, Houston, TX</address>
+      <sex>M</sex>
+      <salary>25000</salary>
+      <projects>
+        <worksOn pno="10" hours="35.0"/>
+        <worksOn pno="30" hours="5.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="111111100" worksFor="6" manages="6">
+      <fname>Jared</fname>
+      <minit>D</minit>
+      <lname>James</lname>
+      <dob>10-OCT-1966</dob>
+      <address>123 Peachtree, Atlanta, GA</address>
+      <sex>M</sex>
+      <salary>85000</salary>
+      <supervisees essns="111111101 111111102 111111103"/>
+      <projects>
+        <worksOn pno="61" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="444444400" worksFor="7" manages="7">
+      <fname>Alex</fname>
+      <minit>D</minit>
+      <lname>Freed</lname>
+      <dob>09-OCT-1950</dob>
+      <address>4333 Pillsbury, Milwaukee, WI</address>
+      <sex>M</sex>
+      <salary>89000</salary>
+      <dependents>
+        <dependent>
+          <dependentName>Johnny</dependentName>
+          <sex>M</sex>
+          <dob>04-APR-1997</dob>
+          <relationship>Son</relationship>
+        </dependent>
+        <dependent>
+          <dependentName>Tommy</dependentName>
+          <sex>M</sex>
+          <dob>07-APR-1999</dob>
+          <relationship>Son</relationship>
+        </dependent>
+      </dependents>
+      <supervisees essns="444444401 444444402 444444403"/>
+      <projects>
+        <worksOn pno="91" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="555555500" worksFor="6" manages="8">
+      <fname>John</fname>
+      <minit>C</minit>
+      <lname>James</lname>
+      <dob>30-JUN-1975</dob>
+      <address>7676 Bloomington, Sacramento, CA</address>
+      <sex>M</sex>
+      <salary>81000</salary>
+      <supervisees essns="555555501"/>
+      <projects>
+        <worksOn pno="92" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="111111101" worksFor="6" supervisor="111111100">
+      <fname>Jon</fname>
+      <minit>C</minit>
+      <lname>Jones</lname>
+      <dob>14-NOV-1967</dob>
+      <address>111 Allgood, Atlanta, GA</address>
+      <sex>M</sex>
+      <salary>45000</salary>
+      <projects>
+        <worksOn pno="61" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="111111102" worksFor="6" supervisor="111111100">
+      <fname>Justin</fname>
+      <minit>null</minit>
+      <lname>Mark</lname>
+      <dob>12-JAN-1966</dob>
+      <address>2342 May, Atlanta, GA</address>
+      <sex>M</sex>
+      <salary>40000</salary>
+      <projects>
+        <worksOn pno="61" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="111111103" worksFor="6" supervisor="111111100">
+      <fname>Brad</fname>
+      <minit>C</minit>
+      <lname>Knight</lname>
+      <dob>13-FEB-1968</dob>
+      <address>176 Main St., Atlanta, GA</address>
+      <sex>M</sex>
+      <salary>44000</salary>
+      <projects>
+        <worksOn pno="61" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="222222200" worksFor="7">
+      <fname>Evan</fname>
+      <minit>E</minit>
+      <lname>Wallis</lname>
+      <dob>16-JAN-1958</dob>
+      <address>134 Pelham, Milwaukee, WI</address>
+      <sex>M</sex>
+      <salary>92000</salary>
+      <supervisees essns="222222201 222222202 222222203"/>
+      <projects>
+        <worksOn pno="62" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="222222201" worksFor="7" supervisor="222222200">
+      <fname>Josh</fname>
+      <minit>U</minit>
+      <lname>Zell</lname>
+      <dob>22-MAY-1954</dob>
+      <address>266 McGrady, Milwaukee, WI</address>
+      <sex>M</sex>
+      <salary>56000</salary>
+      <supervisees essns="222222204 222222205"/>
+      <projects>
+        <worksOn pno="62" hours="48.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="222222202" worksFor="7" supervisor="222222200">
+      <fname>Andy</fname>
+      <minit>C</minit>
+      <lname>Vile</lname>
+      <dob>21-JUN-1944</dob>
+      <address>1967 Jordan, Milwaukee, WI</address>
+      <sex>M</sex>
+      <salary>53000</salary>
+      <projects>
+        <worksOn pno="62" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="222222203" worksFor="7" supervisor="222222200">
+      <fname>Tom</fname>
+      <minit>G</minit>
+      <lname>Brand</lname>
+      <dob>16-DEC-1966</dob>
+      <address>112 Third St, Milwaukee, WI</address>
+      <sex>M</sex>
+      <salary>62500</salary>
+      <projects>
+        <worksOn pno="62" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="222222204" worksFor="7" supervisor="222222201">
+      <fname>Jenny</fname>
+      <minit>F</minit>
+      <lname>Vos</lname>
+      <dob>11-NOV-1967</dob>
+      <address>263 Mayberry, Milwaukee, WI</address>
+      <sex>F</sex>
+      <salary>61000</salary>
+      <projects>
+        <worksOn pno="62" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="222222205" worksFor="7" supervisor="222222201">
+      <fname>Chris</fname>
+      <minit>A</minit>
+      <lname>Carter</lname>
+      <dob>21-MAR-1960</dob>
+      <address>565 Jordan, Milwaukee, WI</address>
+      <sex>F</sex>
+      <salary>43000</salary>
+      <projects>
+        <worksOn pno="62" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="333333300" worksFor="6">
+      <fname>Kim</fname>
+      <minit>C</minit>
+      <lname>Grace</lname>
+      <dob>23-OCT-1970</dob>
+      <address>6677 Mills Ave, Sacramento, CA</address>
+      <sex>F</sex>
+      <salary>79000</salary>
+      <projects>
+        <worksOn pno="63" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="333333301" worksFor="6" supervisor="333333300">
+      <fname>Jeff</fname>
+      <minit>H</minit>
+      <lname>Chase</lname>
+      <dob>07-JAN-1970</dob>
+      <address>145 Bradbury, Sacramento, CA</address>
+      <sex>M</sex>
+      <salary>44000</salary>
+      <projects>
+        <worksOn pno="63" hours="46.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="444444401" worksFor="7" supervisor="444444400">
+      <fname>Bonnie</fname>
+      <minit>S</minit>
+      <lname>Bays</lname>
+      <dob>19-JUN-1956</dob>
+      <address>111 Hollow, Milwaukee, WI</address>
+      <sex>F</sex>
+      <salary>70000</salary>
+      <dependents>
+        <dependent>
+          <dependentName>Chris</dependentName>
+          <sex>M</sex>
+          <dob>19-APR-1969</dob>
+          <relationship>Spouse</relationship>
+        </dependent>
+      </dependents>
+      <projects>
+        <worksOn pno="91" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="444444402" worksFor="7" supervisor="444444400">
+      <fname>Alec</fname>
+      <minit>C</minit>
+      <lname>Best</lname>
+      <dob>18-JUN-1966</dob>
+      <address>233 Solid, Milwaukee, WI</address>
+      <sex>M</sex>
+      <salary>60000</salary>
+      <dependents>
+        <dependent>
+          <dependentName>Sam</dependentName>
+          <sex>M</sex>
+          <dob>14-FEB-1964</dob>
+          <relationship>Spouse</relationship>
+        </dependent>
+      </dependents>
+      <projects>
+        <worksOn pno="91" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="444444403" worksFor="7" supervisor="444444400">
+      <fname>Sam</fname>
+      <minit>S</minit>
+      <lname>Snedden</lname>
+      <dob>31-JUL-1977</dob>
+      <address>987 Windy St, Milwaukee, WI</address>
+      <sex>M</sex>
+      <salary>48000</salary>
+      <projects>
+        <worksOn pno="91" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="555555501" worksFor="6" supervisor="555555500">
+      <fname>Nandita</fname>
+      <minit>K</minit>
+      <lname>Ball</lname>
+      <dob>16-APR-1969</dob>
+      <address>222 Howard, Sacramento, CA</address>
+      <sex>M</sex>
+      <salary>62000</salary>
+      <projects>
+        <worksOn pno="92" hours="44.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="666666600" worksFor="8">
+      <fname>Bob</fname>
+      <minit>B</minit>
+      <lname>Bender</lname>
+      <dob>17-APR-1968</dob>
+      <address>8794 Garfield, Chicago, IL</address>
+      <sex>M</sex>
+      <salary>96000</salary>
+      <supervisees essns="666666601 666666602"/>
+    </employee>
+
+    <employee ssn="666666601" worksFor="8" supervisor="666666600">
+      <fname>Jill</fname>
+      <minit>J</minit>
+      <lname>Jarvis</lname>
+      <dob>14-JAN-1966</dob>
+      <address>6234 Lincoln, Chicago, IL</address>
+      <sex>F</sex>
+      <salary>36000</salary>
+      <supervisees essns="666666603"/>
+      <projects>
+        <worksOn pno="91" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="666666602" worksFor="8" supervisor="666666600">
+      <fname>Kate</fname>
+      <minit>W</minit>
+      <lname>King</lname>
+      <dob>16-APR-1966</dob>
+      <address>1976 Boone Trace, Chicago, IL</address>
+      <sex>F</sex>
+      <salary>44000</salary>
+      <supervisees essns="666666607 666666608 666666609"/>
+    </employee>
+
+    <employee ssn="666666603" worksFor="8" supervisor="666666601">
+      <fname>Lyle</fname>
+      <minit>G</minit>
+      <lname>Leslie</lname>
+      <dob>09-JUN-1963</dob>
+      <address>417 Hancock Ave, Chicago, IL</address>
+      <sex>M</sex>
+      <salary>41000</salary>
+      <supervisees essns="666666604 666666605"/>
+      <projects>
+        <worksOn pno="91" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="666666604" worksFor="8" supervisor="666666603">
+      <fname>Billie</fname>
+      <minit>J</minit>
+      <lname>King</lname>
+      <dob>01-JAN-1960</dob>
+      <address>556 Washington, Chicago, IL</address>
+      <sex>F</sex>
+      <salary>38000</salary>
+      <supervisees essns="666666606"/>
+      <projects>
+        <worksOn pno="91" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="666666605" worksFor="8" supervisor="666666603">
+      <fname>Jon</fname>
+      <minit>A</minit>
+      <lname>Kramer</lname>
+      <dob>22-AUG-1964</dob>
+      <address>1988 Windy Creek, Seattle, WA</address>
+      <sex>M</sex>
+      <salary>41500</salary>
+      <projects>
+        <worksOn pno="92" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="666666606" worksFor="8" supervisor="666666604">
+      <fname>Ray</fname>
+      <minit>H</minit>
+      <lname>King</lname>
+      <dob>16-AUG-1949</dob>
+      <address>213 Delk Road, Seattle, WA</address>
+      <sex>M</sex>
+      <salary>44500</salary>
+      <projects>
+        <worksOn pno="91" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="666666607" worksFor="8" supervisor="666666602">
+      <fname>Gerald</fname>
+      <minit>D</minit>
+      <lname>Small</lname>
+      <dob>15-MAY-1962</dob>
+      <address>122 Ball Street, Dallas, TX</address>
+      <sex>M</sex>
+      <salary>29000</salary>
+      <supervisees essns="666666610"/>
+      <projects>
+        <worksOn pno="61" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="666666608" worksFor="8" supervisor="666666602">
+      <fname>Arnold</fname>
+      <minit>A</minit>
+      <lname>Head</lname>
+      <dob>19-MAY-1967</dob>
+      <address>233 Spring St, Dallas, TX</address>
+      <sex>M</sex>
+      <salary>33000</salary>
+      <projects>
+        <worksOn pno="62" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="666666609" worksFor="8" supervisor="666666602">
+      <fname>Helga</fname>
+      <minit>C</minit>
+      <lname>Pataki</lname>
+      <dob>11-MAR-1969</dob>
+      <address>101 Holyoke St, Dallas, TX</address>
+      <sex>F</sex>
+      <salary>32000</salary>
+      <projects>
+        <worksOn pno="63" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="666666610" worksFor="8" supervisor="666666607">
+      <fname>Naveen</fname>
+      <minit>B</minit>
+      <lname>Drew</lname>
+      <dob>23-MAY-1970</dob>
+      <address>198 Elm St, Philadelphia, PA</address>
+      <sex>M</sex>
+      <salary>34000</salary>
+      <supervisees essns="666666611"/>
+      <projects>
+        <worksOn pno="61" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="666666611" worksFor="8" supervisor="666666610">
+      <fname>Carl</fname>
+      <minit>E</minit>
+      <lname>Reedy</lname>
+      <dob>21-JUN-1977</dob>
+      <address>213 Ball St, Philadelphia, PA</address>
+      <sex>M</sex>
+      <salary>32000</salary>
+      <supervisees essns="666666612"/>
+      <projects>
+        <worksOn pno="61" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="666666612" worksFor="8" supervisor="666666611">
+      <fname>Sammy</fname>
+      <minit>G</minit>
+      <lname>Hall</lname>
+      <dob>11-JAN-1970</dob>
+      <address>433 Main Street, Miami, FL</address>
+      <sex>M</sex>
+      <salary>37000</salary>
+      <supervisees essns="666666613"/>
+      <projects>
+        <worksOn pno="61" hours="40.0"/>
+      </projects>
+    </employee>
+
+    <employee ssn="666666613" worksFor="8" supervisor="666666612">
+      <fname>Red</fname>
+      <minit>A</minit>
+      <lname>Bacher</lname>
+      <dob>21-MAY-1980</dob>
+      <address>196 Elm Street, Miami, FL</address>
+      <sex>M</sex>
+      <salary>33500</salary>
+      <projects>
+        <worksOn pno="61" hours="30.0"/>
+        <worksOn pno="62" hours="10.0"/>
+        <worksOn pno="63" hours="10.0"/>
+      </projects>
+    </employee>
+
+  </employees>
+
+  <projects>
+  
+    <project pnumber="1" controllingDepartment="5">
+      <pname>Product X</pname>
+      <plocation>Bellaire</plocation>
+      <workers>
+        <worker essn="123456789">32.5</worker>
+        <worker essn="453453453">20.0</worker>
+      </workers>
+    </project>
+  
+    <project pnumber="2" controllingDepartment="5">
+      <pname>Product Y</pname>
+      <plocation>Sugarland</plocation>
+      <workers>
+        <worker essn="123456789">7.5</worker>
+        <worker essn="453453453">20.0</worker>
+        <worker essn="333445555">10.0</worker>
+      </workers>
+    </project>
+  
+    <project pnumber="3" controllingDepartment="5">
+      <pname>Product Z</pname>
+      <plocation>Houston</plocation>
+      <workers>
+        <worker essn="666884444">40.0</worker>
+        <worker essn="333445555">10.0</worker>
+      </workers>
+    </project>
+  
+    <project pnumber="10" controllingDepartment="4">
+      <pname>Computerization</pname>
+      <plocation>Stafford</plocation>
+      <workers>
+        <worker essn="333445555">10.0</worker>
+        <worker essn="999887777">10.0</worker>
+        <worker essn="987987987">35.0</worker>
+      </workers>
+    </project>
+  
+    <project pnumber="20" controllingDepartment="1">
+      <pname>Reorganization</pname>
+      <plocation>Houston</plocation>
+      <workers>
+        <worker essn="333445555">10.0</worker>
+        <worker essn="987654321">15.0</worker>
+        <worker essn="888665555">0.0</worker>
+      </workers>
+    </project>
+  
+    <project pnumber="30" controllingDepartment="4">
+      <pname>New Benefits</pname>
+      <plocation>Stafford</plocation>
+      <workers>
+        <worker essn="999887777">30.0</worker>
+        <worker essn="987987987">5.0</worker>
+        <worker essn="987654321">20.0</worker>
+      </workers>
+    </project>
+  
+    <project pnumber="61" controllingDepartment="6">
+      <pname>Operating Systems</pname>
+      <plocation>Jacksonville</plocation>
+      <workers>
+        <worker essn="111111100">40.0</worker>
+        <worker essn="111111101">40.0</worker>
+        <worker essn="111111102">40.0</worker>
+        <worker essn="111111103">40.0</worker>
+        <worker essn="666666607">40.0</worker>
+        <worker essn="666666610">40.0</worker>
+        <worker essn="666666611">40.0</worker>
+        <worker essn="666666612">40.0</worker>
+        <worker essn="666666613">30.0</worker>
+      </workers>
+    </project>
+  
+    <project pnumber="62" controllingDepartment="6">
+      <pname>Database Systems</pname>
+      <plocation>Birmingham</plocation>
+      <workers>
+        <worker essn="222222200">40.0</worker>
+        <worker essn="222222201">48.0</worker>
+        <worker essn="222222202">40.0</worker>
+        <worker essn="222222203">40.0</worker>
+        <worker essn="222222204">40.0</worker>
+        <worker essn="222222205">40.0</worker>
+        <worker essn="666666608">40.0</worker>
+        <worker essn="666666613">10.0</worker>
+      </workers>
+    </project>
+  
+    <project pnumber="63" controllingDepartment="6">
+      <pname>Middleware</pname>
+      <plocation>Jackson</plocation>
+      <workers>
+        <worker essn="333333300">40.0</worker>
+        <worker essn="333333301">46.0</worker>
+        <worker essn="666666609">40.0</worker>
+        <worker essn="666666613">10.0</worker>
+      </workers>
+    </project>
+  
+    <project pnumber="91" controllingDepartment="7">
+      <pname>Inkjet Printers</pname>
+      <plocation>Phoenix</plocation>
+      <workers>
+        <worker essn="444444400">40.0</worker>
+        <worker essn="444444401">40.0</worker>
+        <worker essn="444444402">40.0</worker>
+        <worker essn="444444403">40.0</worker>
+        <worker essn="666666601">40.0</worker>
+        <worker essn="666666603">40.0</worker>
+        <worker essn="666666604">40.0</worker>
+        <worker essn="666666606">40.0</worker>
+      </workers>
+    </project>
+  
+    <project pnumber="92" controllingDepartment="7">
+      <pname>Laser Printers</pname>
+      <plocation>Las Vegas</plocation>
+      <workers>
+        <worker essn="555555500">40.0</worker>
+        <worker essn="555555501">44.0</worker>
+        <worker essn="666666605">40.0</worker>
+      </workers>
+    </project>
+  
+  </projects>
+
+</companyDB>

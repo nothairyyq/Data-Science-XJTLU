@@ -12,5 +12,5 @@
 
 
 ## Coursework Information
-[Coursework (Groupwork)](): Salinas dataset  classification, Uploaded answer Final Score: 85
-[Final project]():  Mathematical problems +  Practical problems, Uploaded answer Final Score: 92
+- [Coursework (Groupwork)](): Salinas dataset  classification, Uploaded answer Final Score: 85;
+- [Final project]():  Mathematical problems +  Practical problems, Uploaded answer Final Score: 92

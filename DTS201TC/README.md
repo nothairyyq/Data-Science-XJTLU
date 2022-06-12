@@ -12,6 +12,6 @@
 
 
 ## Coursework Information
-- [Coursework (Groupwork)](): Salinas dataset  classification, Uploaded answer Final Score: 85;
+- [Coursework (Groupwork)](https://github.com/nothairyyq/Data-Science-XJTLU/tree/main/DTS201TC/Coursework/Coursework1): Salinas dataset  classification, Uploaded answer Final Score: 85;
    - Dataset: https://paperswithcode.com/dataset/salinas
 - [Final project]():  Mathematical problems +  Practical problems, Uploaded answer Final Score: 92

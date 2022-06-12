@@ -9,7 +9,7 @@ This repository will iteratively provide all relevant XJTLU data science module 
 | Y2 S1 | Introduction to Probability and Statistics   | MTH113TC |5      |
 | Y2 S2 | Introduction to Databases                    | CPT103TC |5      |
 | Y2 S2 | Artificial Intelligence and Data Analysis    | MFE204TC |5      |
-| Y2 S2 | Introduction to Neural Networks              | DTS101TC |2.5    |
+| Y2 S2 | [Introduction to Neural Networks](https://github.com/nothairyyq/Data-Science-XJTLU/tree/main/DTS101TC)             | DTS101TC |2.5    |
 | Y2 S2 | Numerical Methods                            | DTS104TC |2.5    |
 | ----- | ---------------------------------- | ------|------ |
 | Y3 S1 | [Database Development and Design](https://github.com/nothairyyq/Data-Science-XJTLU/tree/main/CPT201TC)    | CPT201TC |5      |

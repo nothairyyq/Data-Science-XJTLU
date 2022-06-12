@@ -21,3 +21,7 @@ This repository will iteratively provide all relevant XJTLU data science module 
 其他的课程，cpt201我觉得可以很容易过去，身边有很多cw出来了再去学最后分数也是90+(很大原因是由于module leader给分松)。dts201和206是想要走算法/statistic必须好好掌握的重要课程，201使用的book就是PRML(机器学习的圣经), 这门课可以很好的打下机器学习和深度学习的基础。
 
 203算法这门课对标的是MIT6.046J, 我认为你即使有力扣刷题基础（如果没有速速去刷力扣！！）也要好好看一下203提供的递归式推导和复杂度推导的内容，这种学习是很难在其他地方看到的。
+
+## Coursework Information
+
+[001: Assessment Task 1 (CW)]()

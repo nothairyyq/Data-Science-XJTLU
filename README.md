@@ -22,6 +22,4 @@ This repository will iteratively provide all relevant XJTLU data science module 
 
 203算法这门课对标的是MIT6.046J, 我认为你即使有力扣刷题基础（如果没有速速去刷力扣！！）也要好好看一下203提供的递归式推导和复杂度推导的内容，这种学习是很难在其他地方看到的。
 
-## Coursework Information
 
-[001: Assessment Task 1 (CW)]()

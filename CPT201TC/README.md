@@ -16,4 +16,5 @@
 
 ## Coursework Information
 
-[001: Assessment Task 1 (CW)]()
+[001: Assessment Task 1 (CW)](https://github.com/nothairyyq/Data-Science-XJTLU/blob/main/CPT201TC/Coursework/CPT201TC_Assessment_Task%20001.pdf), Final Score: 100/100
+[002: Assessment Task 2 (CW)](), Final Score: 92/100

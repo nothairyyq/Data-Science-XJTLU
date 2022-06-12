@@ -5,7 +5,7 @@ This repository will iteratively provide all relevant XJTLU data science module 
 | Year  | Module Name                        |Module Code |Credit |
 | ----- | ---------------------------------- | ------|------ |
 | Y3 S1 | [Database Development and Design](https://github.com/nothairyyq/Data-Science-XJTLU/tree/main/CPT201TC)    | CPT201TC |5      |
-| Y3 S1 | Pattern Recognition                | DTS201TC |5      |
+| Y3 S1 | [Pattern Recognition](https://github.com/nothairyyq/Data-Science-XJTLU/tree/main/DTS201TC)                | DTS201TC |5      |
 | Y3 S1 | Fundamentals of Parallel Computing | DTS202TC |5      |
 | Y3 S2 | Design and Analysis of Algorithms  | DTS203TC |5      |
 | Y3 S2 | Applied Linear Statistical Models  | DTS206TC |5      |

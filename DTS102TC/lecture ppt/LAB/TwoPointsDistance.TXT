@@ -1,0 +1,39 @@
+/*
+This program can dispaly two points distance
+*/
+#include<iostream>
+/*
+This program can dispaly two points distance
+*/
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main() {
+	//Entre the first point coordinate
+	double abscissaOfFirst, ordinateOfFirst;
+	cout << "Entre abscissa of the first point: ";
+	cin >> abscissaOfFirst;
+	cout << "Entre ordinate of the first point: ";
+	cin >> ordinateOfFirst;
+
+	//Entre the second point coordinate
+	double abscissaOfSecond, ordinateOfSecond;
+	cout << "Entre abscissa of the second point: ";
+	cin >> abscissaOfSecond;
+	cout << "Entre ordinate of the second point: ";
+	cin >> ordinateOfSecond;
+
+	//Caculate the distance between two coordinates
+	double distance1,distance2,distanceOfSum;
+	distance1 = pow(abscissaOfFirst - abscissaOfSecond, 2);
+	distance2 = pow(ordinateOfFirst - ordinateOfSecond, 2);
+	distanceOfSum = pow(distance1 + distance2, 0.5);
+	distanceOfSum = static_cast<int>(distanceOfSum * 100) / 100.0;
+
+	//display result
+	cout << "The distance between the two coordinates you entered is : "
+		<< distanceOfSum << endl;
+
+	return 0;
+}

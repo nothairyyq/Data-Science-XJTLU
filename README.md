@@ -4,7 +4,7 @@ This repository will iteratively provide all relevant XJTLU data science module 
 ## Module List
 | Year  | Module Name                        |Module Code |Credit |
 | ----- | ----------------------------------| ------|------ |
-| Y2 S1 | Programming with C++/R                       | DTS102TC |5      |
+| Y2 S1 | [Programming with C++/R](https://github.com/nothairyyq/Data-Science-XJTLU/tree/main/DTS102TC)                       | DTS102TC |5      |
 | Y2 S1 | [Computer Architecture and Operating Systems](https://github.com/nothairyyq/Data-Science-XJTLU/tree/main/IOT103TC)  | IOT103TC |5      |
 | Y2 S1 | [Introduction to Probability and Statistics](https://github.com/nothairyyq/Data-Science-XJTLU/tree/main/MTH113TC)   | MTH113TC |5      |
 | Y2 S2 | [Introduction to Databases](https://github.com/nothairyyq/Data-Science-XJTLU/tree/main/CPT103TC)                    | CPT103TC |5      |
